@@ -79,7 +79,7 @@
             text-align: center;
         }
 
-        .motto{
+        .subheader{
             margin-bottom: 20px;
             color: #333;
             text-align: center;
@@ -104,11 +104,19 @@
 
         .grid-aligned div {
             border: 5px dashed #dbb55c;
+            border-radius: 5px;
         }
 
         div h3 {
             margin-bottom: 10px;
             color: #d44a4a;
+        }
+
+        div img {
+            width: 180px;
+            height: 180px;
+            border: 3px solid #d44a4a;
+            border-radius: 5px;
         }
       </style>
     </head>
@@ -120,7 +128,7 @@
                 <li><a href="#Home">Home</a></li>
                 <li><a href="#About">About</a></li>
                 <li><a href="#Services">Services</a></li>
-                <li><a href="#Photos">Our Menu</a></li>
+                <li><a href="#Menu">Our Menu</a></li>
                 <li><a href="#Contact">Testimonial</a></li>
             </ul>
         </nav>
@@ -139,7 +147,7 @@
         <section id="About">
             <h2>About Us</h2>
             <h1>John & James:</h1> 
-            <h3 class="motto">Motto: <i>Real</i> Italian Delights</h3> 
+            <h3 class="subheader">Motto: <i>Real</i> Italian Delights</h3> 
             <p><strong> John & James </strong> is a chain of Italian restaurants in the Jakarta, Indonesia area, with locations in places like Graha Raya, BSD, and Green Lake City. </p>
             <p> The restaurants are known for serving authentic Italian cuisine, including pizza and pasta,</p>
             <p> and are popular for their friendly atmosphere and delicious food.</p>
@@ -164,9 +172,14 @@
             </div>
         </section>
 
-        <section id="Photos">
+        <section id="Menu">
             <h2>Our Menu</h2>
-            <p>Your content here...</p>
+            <h3 class="subheader"> Customer Favourites: </h3>
+            <div class="grid-aligned">
+                <img src="https://images.happycow.net/venues/500/16/60/hcmp166081_3197746.jpeg"/>
+                <img src="https://images.happycow.net/venues/1024/16/60/hcmp166081_3197749.jpeg"/>
+                <img src="https://i.gojekapi.com/darkroom/gofood-indonesia/v2/images/uploads/4d9282e2-8c87-4b99-8492-60e63c3fc0d0_Go-Biz_20250314_171004.jpeg">
+            </div>
         </section>
 
         <section id="Contact">
