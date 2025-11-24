@@ -94,7 +94,7 @@
             height: 100;
         }
 
-        .grid-aligned {
+        .menu-services {
             padding: 10px;
             margin: 10px;
             display: grid;
@@ -102,7 +102,7 @@
             gap: 30px;
         }
 
-        .grid-aligned div {
+        .service{
             border: 5px dashed #dbb55c;
             border-radius: 5px;
         }
@@ -112,12 +112,71 @@
             color: #d44a4a;
         }
 
-        div img {
+        .menu{
             width: 180px;
             height: 180px;
             border: 3px solid #d44a4a;
             border-radius: 5px;
         }
+
+        .client-profile{
+            width: 45px;
+            height: 45px;
+            border: 3px solid #d44a4a;
+            border-radius: 100px;
+        }
+
+        .rating {
+            width: 155px;
+            height: 50px;
+            margin-top: -25px;
+        }
+
+        .client-name {
+            text-align: right;
+            text-decoration: underline;
+            margin-top: -30px;
+
+        }
+
+        .testimony {
+            border: 5px solid #dbb55c;
+            border-radius: 5px;
+            overflow-y: scroll
+        }
+
+        h4 {
+            margin-bottom: 10px;
+            color: #333;
+            text-align: center;
+        }
+          
+        .testimonial {
+            padding: 10px;
+            margin: 10px;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-rows: 1fr;
+            gap: 30px;
+        }
+
+        footer img {
+            width: 100px;
+            height: 100px;
+            object-fit: contain;
+            left: 100;
+            margin: 10px;
+        }
+
+        footer {
+            background-color: grey;
+        }
+
+        footer a {
+            width: 25px;
+            height: 25px;
+        }
+
       </style>
     </head>
     <body>
@@ -129,7 +188,7 @@
                 <li><a href="#About">About</a></li>
                 <li><a href="#Services">Services</a></li>
                 <li><a href="#Menu">Our Menu</a></li>
-                <li><a href="#Contact">Testimonial</a></li>
+                <li><a href="#Testimonials">Testimonial</a></li>
             </ul>
         </nav>
         <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT5yL0GEvfhbLB51HTXhKbwIK7Orb2sbUC8cQ&s" alt="Logo"/>
@@ -157,15 +216,15 @@
         <section id="Services">
             <h2>Our Services</h2>
             <div class="grid-aligned">
-                <div>
+                <div class="service">
                     <h3> 01: Online Ordering </h3>
                     <p>Order online and we'll deliver to you!</p>
                 </div>
-                <div>
+                <div class="service">
                     <h3> 02: Table Booking </h3>
                     <p>Come to our restaurant without anyone stealing your seat!</p>
                 </div>
-                <div>
+                <div class="service">
                     <h3> 03: Refund </h3>
                     <p>We made a mistake? take back your money!</p>
                 </div>
@@ -176,17 +235,59 @@
             <h2>Our Menu</h2>
             <h3 class="subheader"> Customer Favourites: </h3>
             <div class="grid-aligned">
-                <img src="https://images.happycow.net/venues/500/16/60/hcmp166081_3197746.jpeg"/>
-                <img src="https://images.happycow.net/venues/1024/16/60/hcmp166081_3197749.jpeg"/>
-                <img src="https://i.gojekapi.com/darkroom/gofood-indonesia/v2/images/uploads/4d9282e2-8c87-4b99-8492-60e63c3fc0d0_Go-Biz_20250314_171004.jpeg">
+                <img class="menu" src="https://images.happycow.net/venues/500/16/60/hcmp166081_3197746.jpeg"/>
+                <img class="menu" src="https://images.happycow.net/venues/1024/16/60/hcmp166081_3197749.jpeg"/>
+                <img class="menu" src="https://i.gojekapi.com/darkroom/gofood-indonesia/v2/images/uploads/4d9282e2-8c87-4b99-8492-60e63c3fc0d0_Go-Biz_20250314_171004.jpeg">
             </div>
         </section>
 
-        <section id="Contact">
+        <section id="Testimonials">
             <h2>Testimonials</h2>
-            <p>Your content here...</p>
+            <div class="testimonial">
+                <div class="testimony">
+                    <div>
+                        <img class="client-profile" src="https://cdn-icons-png.flaticon.com/512/7891/7891470.png" />
+                        <p class="client-name"> William Afton </p>
+                    </div>
+                    <img class="rating" src="https://garthwest.com/wp-content/uploads/2023/01/five-star-png-free-download-fourjayorg-five-stars-png-1057_296.png"/>
+                    <div>
+                        <h4> I like the taste </h4>
+                        <p> no description provided </p>
+                    </div>
+                </div>
+
+                <div class="testimony">
+                    <div>
+                        <img class="client-profile" src="https://cdn-icons-png.flaticon.com/512/7891/7891470.png" />
+                        <p class="client-name"> Sarah Carter </p>
+                    </div>
+                    <img class="rating" src="https://garthwest.com/wp-content/uploads/2023/01/five-star-png-free-download-fourjayorg-five-stars-png-1057_296.png"/>
+                    <div>
+                        <h4> Best pizza in town, hands down! </h4>
+                        <p> The crust is perfectly crispy, and you can tell they use fresh ingredients. My family and I come here every Friday night. The margherita pizza is our absolute favorite! </p>
+                    </div>
+                </div>
+
+                <div class="testimony">
+                    <div>
+                        <img class="client-profile" src="https://cdn-icons-png.flaticon.com/512/7891/7891470.png" />
+                        <p class="client-name"> Micheal Chen </p>
+                        </div>
+                        <img class="rating" src="https://garthwest.com/wp-content/uploads/2023/01/five-star-png-free-download-fourjayorg-five-stars-png-1057_296.png"/>
+                        <div>
+                            <h4> I've been ordering from John and James for over two years now. </h4>
+                            <p> Their delivery is always fast, the pizza arrives hot, and the flavor is consistently amazing. The pepperoni pizza is a must-try! </p>
+                        </div>
+                    </div> 
+                </div>
         </section>
     </main>
+
+    <footer>
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT5yL0GEvfhbLB51HTXhKbwIK7Orb2sbUC8cQ&s" alt="Logo"/> 
+
+        <a href="https://www.instagram.com/johnandjames_bsd/?hl=en"> <img src="https://images.seeklogo.com/logo-png/28/2/instagram-new-2016-glyph-logo-png_seeklogo-282176.png"/> </a>    
+    </footer>
 
     </body>
 </html>
